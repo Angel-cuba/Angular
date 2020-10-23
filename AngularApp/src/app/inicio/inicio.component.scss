@@ -1,0 +1,37 @@
+@import '../../sass/_color.scss';
+
+.h1{
+    text-align: center;
+    background-color: $clr-navy;
+    color: $light;
+    width: fit-content;
+    margin: auto;
+    padding: .5em;
+}
+p{
+    width: 50%;
+    height: max-content;                                                                            
+    margin: auto;
+    background-color: black;
+    color: rgb(216, 203, 203);
+    text-align: center;
+    position: relative;
+    padding: 1em;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+}
+.dropdown-menu{
+    background-color: $light;
+    color: $dark;
+    &:hover{
+        background-color: $grey;
+        color: aliceblue;
+    }
+    .dropdown-item{
+        text-transform: capitalize;
+        &:hover{
+            color: $clr-navy;
+        }
+    }
+}

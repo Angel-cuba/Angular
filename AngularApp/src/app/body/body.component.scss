@@ -1,0 +1,18 @@
+@import '../../sass/color';
+
+
+h1{
+    text-align: center;
+    background-color: $clr-olive-gold;
+}
+p{
+    color: chocolate;
+    text-align: center;
+}
+#p-body{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+}

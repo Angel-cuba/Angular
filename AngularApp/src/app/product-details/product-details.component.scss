@@ -1,0 +1,31 @@
+@import '../../sass/color';
+
+.product{
+    position: relative;
+    h1{
+        text-align: left;
+    }
+    p{
+        width: 60%;
+    }
+    .coment-works{
+        color: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-transform: uppercase;
+    }
+  .personal{
+    background-color: rgba(0,0,0,.2);
+    padding: .4em;
+    position: relative;
+    text-align: right;
+    
+    p{
+       
+        width: 30%;
+        text-align: right;
+        color: black;
+    }
+}  
+}
