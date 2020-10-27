@@ -42,10 +42,35 @@
           </form>
       </nav>
 
-      <div class="container bg-green">
-              <h1>Todo es to es el <b class="btn-primary">{{inicio}}</b></h1>
+      <div class="container bg-light">
+              <h1>Todo esto es el <b class="btn-primary">{{inicio}}</b></h1>
       </div>
-    <p>dddddddddddddddddddddLorem ipsum dolor sit amet consectetur, adipisicing elit. Animi numquam ratione ut quibusdam itaque voluptate laudantium. Est iusto quos nulla similique fuga voluptates, aut ipsam perferendis ex rerum pariatur animi!</p>
 
+       <!-- ngIf........Esto es un DIV a la derecha que se
+      oculta (by deefault) y aparece-->
+
+      <div  class="n">
+        <h1>Hola</h1>
+        <button class="btn btn-warning" (click)="show=!show">Show/Hide</button>
+       <p>Lorem erfgbertipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+        <div class="test" *ngIf="show">
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, rem suscipit culpa obcaecati nemo officiis numquam nobis sit eum iusto ratione dignissimos distinctio fugit maiores quia ipsam in et quos?</p>
+        </div>
+      </div>
+      <!--Este funciona cuando la variable=true(#else)-->
+      <div *ngIf="show; else MostrarContenidoSiEsTrue">Content to render when condition is true.</div>
+        <ng-template #MostrarContenidoSiEsTrue>
+          <div class="else">
+            Now is false.
+          </div> 
+        </ng-template>
+     
+        <div *ngIf="show; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>Content to render when condition is true.</ng-template>
+        <ng-template #elseBlock>Content to render when condition is false.</ng-template>
+
+<p class="p_last">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto distinctio deleniti molestiae vel inventore adipisci voluptate accusantium quod, odio minus perferendis aut optio, cum ratione aliquid laudantium asperiores, iste sit?</p>
 </body>
 </html>

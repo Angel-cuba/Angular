@@ -10,3 +10,17 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, non expedita molestias ea pariatur consequatur necessitatibus, temporibus distinctio dolore dignissimos ad quis nihil autem cum ratione ullam minus omnis dolorem.</p>
 
 </div>
+<div class="container servicios">
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error iusto, tenetur consequatur dolore autem libero blanditiis ipsum voluptates! Distinctio et quia ipsam similique ex tempore laborum corrupti possimus voluptas officiis.</p>
+ <ul class="list-group">
+   <li class="list-group-item" *ngFor= "let item of servicio, index as i">
+      
+      <h4>Nombre: {{item.nombre}}</h4>
+      <h5>Especialidad: {{item.especialidad}}</h5>
+      <a routerLink= "['/service', i]">Leer más....</a>
+   
+   
+   </li>
+   
+ </ul>
+</div>

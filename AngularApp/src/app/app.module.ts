@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Esta es la clase de SEVICIOS.....de donde se puede
+//importar archivos o data.....(.json,[PYTHON], java)
+import{ MyServiceService } from './my-service.service';
+
+//A partir de aqui se importan todos los COMPONENTES
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -9,6 +14,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShowComponent } from './show/show.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +24,17 @@ import { InicioComponent } from './inicio/inicio.component';
     BodyComponent,
     FooterComponent,
     ShowComponent,
-    InicioComponent
+    InicioComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
     
   ],
-  providers: [],
+  providers: [
+    MyServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,12 @@
 @import '../../sass/_color.scss';
 
+html{
+    width: 100vw;
+    height: auto;
+}
+body{
+    background-color: lightcyan;
+}
 .h1{
     text-align: center;
     background-color: $clr-navy;
@@ -8,18 +15,28 @@
     margin: auto;
     padding: .5em;
 }
-p{
+.p_last{
     width: 50%;
-    height: max-content;                                                                            
+    height: 200px;                                                                            
     margin: auto;
-    background-color: black;
+    background-color: rgba(0,0,0,.6);
     color: rgb(216, 203, 203);
     text-align: center;
     position: relative;
     padding: 1em;
-    position: absolute;
-    bottom: 20%;
-    left: 25%;
+    //position: absolute;
+    position: relative;
+    //bottom: 20%;
+    //left: 25%;
+}
+p{
+    width: 70%;
+    height: max-content;                                                                            
+    margin: auto;
+    background-color: rgba(0,0,0,.16);
+    color: rgb(216, 203, 203);
+    text-align: center;
+   
 }
 .dropdown-menu{
     background-color: $light;
@@ -34,4 +51,29 @@ p{
             color: $clr-navy;
         }
     }
+}
+.n{
+    width: 80vw;
+    margin: auto;
+    padding: 1.8em;
+    background-color: aqua;
+    color: black;
+    .test{
+        position: absolute;
+        top: 51%;
+        right: 30px;
+        background-color: black;
+        width: 300px;
+        border-radius: 6px;
+        p{
+            color: rgb(219, 200, 29);
+        }
+    }
+}
+.else{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: coral;
+    color: white;
 }

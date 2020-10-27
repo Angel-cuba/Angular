@@ -1,5 +1,11 @@
 @import '../sass/color';                                                                                                                                                              
 
+
+.body{
+    background-color: rgba(224, 255, 255,.14);
+    width: auto;
+    height: auto;
+}
 .test{
     background-color: $clr-aqua;
     display: flex;

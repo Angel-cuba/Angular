@@ -4,7 +4,34 @@
     background-color: $grey;
     padding: 2em;
     text-align: center;
-    margin: 1em;
-    width: auto;
+    margin: auto;
+    width: 80%;
 }
+.servicios{
+    background-color: rgba(144, 238, 144,.5);
+    margin-top: 3em;
+    padding: 2em;
+    p{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    &:hover{
+    background-color: rgba(144, 238, 144,.6);
 
+    }
+    &:hover p{
+        color: white;
+        font-weight: 450;
+    }
+    li{
+        background-color: rgba(190, 224, 213,.8);
+        cursor: pointer;
+        a{
+            cursor: default;
+        }
+    }
+    &:hover ul li{
+        background-color: rgba(190, 224, 213,.3);
+    }
+}

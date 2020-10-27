@@ -1,4 +1,5 @@
 <div class="container mt-5 product btn-primary p-5">
+ 
     <h1 class="btn-primary">Esta es la página de productos {{title}}</h1>
      <button class="btn-danger btn"><a class="a_link" routerLink="/show">Ir a SHOW_PAGE</a></button>
     <p class="coment-works">product-details works!</p>
@@ -7,9 +8,40 @@
 <hr>
 <div class="personal">
   <h3>Aqui va la lista de productos</h3>
-<button class="btn-secondary">Lista del personal</button>
+<button class="btn-secondary" (click)="show=!show">Lista del personal</button>
+<div class="productosdelistadelpersonal"  *ngIf= "show">
+ <h2>Products</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Last_Name</th>
+        <th scope="col">Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let animal of animales; index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{animal.tipo}}</td>
+        <td>{{animal.nombre}}</td>
+        <td>{{animal.edad}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+
+<!--<ul>
+    <li *ngFor="let curso of cursos">{{curso}}</li>
+  </ul>-->
+
+  
+
 <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consectetur quis, nihil.</p>  
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consectetur quis, nihil.
+  </p>  
 </div>
 
 </div>

@@ -20,6 +20,7 @@
     padding: .4em;
     position: relative;
     text-align: right;
+    cursor: pointer;
     
     p{
        
@@ -27,5 +28,24 @@
         text-align: right;
         color: black;
     }
+    &:hover p{
+        color: white;
+    }
 }  
+}
+ul{
+    width: 100px;
+    text-align: left;
+}
+
+.productosdelistadelpersonal
+{
+    background-color: rgba(0,0,0,.1);
+    h2{
+        text-align: center;
+    }
+    table{
+        background-color: azure;
+    }
+  
 }
